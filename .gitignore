@@ -9,10 +9,6 @@
 # production
 /build
 
-# https
-cert.pem
-key.pem
-
 # misc
 npm-debug.log*
 
