@@ -1,0 +1,27 @@
+{
+  "name": "folded-elephant",
+  "version": "1.0.0",
+  "description": "\\* Copyright pending",
+  "main": "LandingPage.html",
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NmVAson/the-folded-elephant.git"
+  },
+  "keywords": [
+    "birthday",
+    "cards"
+  ],
+  "author": "NmVAson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NmVAson/the-folded-elephant/issues"
+  },
+  "homepage": "https://github.com/NmVAson/the-folded-elephant#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

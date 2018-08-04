@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Playfair+Display");
+.btn-primary {
+  color: #fff;
+  background-color: #726A95;
+  border-color: #726A95; }
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #726A95; }
+
+body {
+  font-family: 'Montserrat'; }
+  body .page {
+    padding-top: 120px; }
+  body .fe-color {
+    background-color: #709FB0; }
+  body .btn-primary {
+    color: #fff;
+    background-color: #726A95;
+    border-color: #726A95; }
+  body .navbar-dark .navbar-nav .nav-link:hover, body .navbar-dark .navbar-nav .nav-link:focus {
+    color: #726A95; }
+
+h2 {
+  color: #709FB0; }
+
+h3 {
+  color: #A0C1B8; }
+
+h4 {
+  color: #F4E8C1; }
+
+text {
+  color: #351F39; }
+
+blockquote {
+  font-family: 'Indie Flower', italic;
+  font-size: 20px;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #709FB0; }
+  blockquote ::before {
+    font-family: 'Playfair Display', black;
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a; }
+  blockquote cite {
+    color: #7a7a7a;
+    font-family: 'Montserrat', bold;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px; }
+    blockquote cite ::before {
+      content: "\2014 \2009"; }
