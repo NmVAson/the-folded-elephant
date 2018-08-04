@@ -2,10 +2,11 @@
   "name": "folded-elephant",
   "version": "1.0.0",
   "description": "\\* Copyright pending",
-  "main": "LandingPage.html",
+  "main": "index.html",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha",
-    "start": "http-server -S"
+    "serve": "http-server -S"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "http-server": "^0.11.1"
   }
 }
