@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                sh 'npm install'
+                sh 'sudo npm install'
             }
         }
         stage('Test') {
