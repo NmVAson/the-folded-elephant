@@ -7,6 +7,11 @@ body {
         padding-top: 150px;
     }
 
+    .section {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
     .fe-color {
         background-color: $fe-alt-color;
     }
@@ -18,13 +23,17 @@ body {
 }
 
 img {
-    width: 80px;
+    width: 40px;
 }
 
 h1.page-title {
     font-family: 'Shadows Into Light', regular;
     font-size: 4rem;
     margin-left: -20px;
+}
+
+th, td {
+    color: $fe-alt-light;
 }
 
 h2 {
@@ -35,7 +44,7 @@ h3 {
     color: #A0C1B8
 }
 
-h4 {
+legend {
     color: #F4E8C1
 }
 
@@ -74,4 +83,9 @@ blockquote {
             content: "\2014 \2009";
         }
     }
+}
+
+#mc-embedded-subscribe {
+    height: 32px;
+    padding-top: 4px;
 }
