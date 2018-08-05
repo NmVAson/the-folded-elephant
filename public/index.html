@@ -10,6 +10,8 @@
         <title>The Folded Elephant</title>
         <meta name="description" content="Sentiments that don't require a trip to the store">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="dist/notify.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
@@ -24,6 +26,7 @@
 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
+                    <li>Coming soon...</li>
                 </ul>
             </div>
         </div>
@@ -69,6 +72,8 @@
                         <p class="lead text-muted">We'll let you know when we're up-and-running</p>
                         <!-- Begin MailChimp Signup Form -->
                         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">
+                        </style>
                         <div id="mc_embed_signup">
                         <form action="https://thefoldedelephant.us19.list-manage.com/subscribe/post?u=41f8724ef6a1ff9479fa87a3e&amp;id=c80fa324fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
@@ -80,6 +85,39 @@
                             </div>
                         </form>
                         </div>
+                        <script type="text/javascript">
+                            jQuery(document).ready(function($) {
+                                $('#mc-embedded-subscribe-form').submit(function (e) {
+                                    e.preventDefault();
+                                    $.ajax({
+                                        url: 'https://thefoldedelephant.us19.list-manage.com/subscribe/post-json?u=41f8724ef6a1ff9479fa87a3e&amp;id=c80fa324fb&c=?',
+                                        type: 'GET',
+                                        data: $('#mc-embedded-subscribe-form').serialize(),
+                                        dataType: 'jsonp',
+                                        contentType: "application/json; charset=utf-8",
+                                        success: function (data) {
+                                            if (data['result'] != "success") {
+                                                console.log(data['msg']);
+                                                if(data['msg'].includes("is already subscribed")) {
+                                                    $.notify("You've already signed up, silly!", {
+                                                        globalPosition: "top right",
+                                                        className: "info",
+                                                        gap: 3
+                                                    });
+                                                }
+                                            } else {
+                                                $.notify("Yay! We'll be in touch!",{
+                                                    globalPosition:"top right",
+                                                    className: "success",
+                                                    gap: 3
+                                                });
+                                            }
+                                            $('#mce-EMAIL').val(null)
+                                        }
+                                    });
+                                });
+                            });
+                            </script>
                         <!--End mc_embed_signup-->
                     </div>
                 </div>
