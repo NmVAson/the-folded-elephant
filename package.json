@@ -4,7 +4,7 @@
   "description": "\\* Copyright pending",
   "main": "index.html",
   "scripts": {
-    "start": "node index.js",
+    "start": "gulp && node index.js",
     "test": "mocha",
     "serve": "http-server -S"
   },
@@ -26,6 +26,7 @@
     "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-minify": "^3.1.0",
+    "gulp-mocha": "^6.0.0",
     "gulp-sass": "^4.0.1",
     "karma": "^2.0.5",
     "karma-chai": "^0.1.0",
